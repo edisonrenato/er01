@@ -4,7 +4,8 @@
   "description": "test edisonrenato",
   "main": "index.js",
   "scripts": {
-    "prettier": "prettier --config .prettierrc 'Node/**/*.js' --write"
+    "prettier": "prettier --config .prettierrc '*.js' --write",
+    "lint": "eslint . --ext .js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,11 @@
   },
   "homepage": "https://github.com/edisonrenato/er01#readme",
   "devDependencies": {
+    "eslint": "^8.22.0",
     "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0"
   }
 }

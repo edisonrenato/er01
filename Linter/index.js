@@ -26,13 +26,18 @@ const menuQ = () => {
     }
   });
 };
-let milkQ = () => {
+function milkQ() {
   return new Promise((resolve, reject) => {
+    try {
     rl.question('How many cups of milk to add? ', (answer) => {
       resolve(answer);
     });
+  } catch (error) {
+    // eslint-disable-next-line prefer-promise-reject-errors
+    reject();
+  }
   });
-};
+}
 
 // User questions
 const userOptions = async (mochaObject) => {
@@ -52,17 +57,27 @@ const userOptions = async (mochaObject) => {
 };
 
 const espressoQ = () => {
-  return new Promise((resolve, reject) => {
+  return new Promise(function (resolve, reject) {
+    try{
     rl.question('How many shots of espresso to add? ', (answer) => {
       resolve(answer);
     });
+  } catch (error) {
+    // eslint-disable-next-line prefer-promise-reject-errors
+    reject();
+  }
   });
 };
 const peppermintQ = () => {
   return new Promise((resolve, reject) => {
+    try{
     rl.question('How many shots of peppermint to add? ', (answer) => {
       resolve(answer);
     });
+  } catch (error) {
+    // eslint-disable-next-line prefer-promise-reject-errors
+    reject();
+  }
   });
 };
 // Create parent class Mocha
@@ -111,6 +126,20 @@ class PeppermintMocha extends Mocha {
   }
 }
 
+// display menu and return selected menu item
+const showMenu = async () => {
+  console.log(
+    'Select Mocha from menu: \n',
+    '1: Create White Chocolate Mocha \n',
+    '2: Create Dark Chocolate Mocha \n',
+    '3: Create Peppermint Mocha\n',
+    '0: Exit\n'
+  );
+  const qMenu = await menuQ();
+  return qMenu;
+};
+
+
 const main = () => {
   let menuChoice = 0;
   const buildMocha = async () => {
@@ -121,19 +150,21 @@ const main = () => {
         case 0: {
           break;
         }
-        case 1:
-          let whiteMochaVar = 0;
+        case 1: {
           const whiteMocha = new WhiteChocolateMocha();
           await userOptions(whiteMocha);
           break;
-        case 2:
+        }
+        case 2: {
           const darkMocha = new DarkChocolateMocha();
           await userOptions(darkMocha);
           break;
-        case 3:
+        }
+        case 3: {
           const peppermintMocha = new PeppermintMocha();
           await userOptions(peppermintMocha);
           break;
+        }
         default: {
           console.log('Option invalid, please choose from menu.');
           break;
@@ -147,15 +178,3 @@ const main = () => {
 };
 main();
 
-// display menu and return selected menu item
-const showMenu = async () => {
-  console.log(
-    'Select Mocha from menu: \n',
-    '1: Create White Chocolate Mocha \n',
-    '2: Create Dark Chocolate Mocha \n',
-    '3: Create Peppermint Mocha\n',
-    '0: Exit\n'
-  );
-  const qMenu = await menuQ();
-  return qMenu;
-};

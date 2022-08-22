@@ -4,15 +4,9 @@
   "description": "test edisonrenato",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "prettier": "prettier --config .prettierrc '*.js' --write",
     "lint": "eslint . --ext .js"
-||||||| 3ffec8e
-    "prettier": "prettier --config .prettierrc 'Node/**/*.js' --write"
-=======
     "prettier": "prettier --config .prettierrc 'Node/**/*.js' --write",
-    "lint": "eslint"
->>>>>>> 64c8d83455a7284b00a56aab6ca29989f96c0977
   },
   "repository": {
     "type": "git",
@@ -31,16 +25,12 @@
   "devDependencies": {
     "eslint": "^8.22.0",
     "prettier": "^2.7.1"
-<<<<<<< HEAD
   },
   "dependencies": {
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0"
-||||||| 3ffec8e
-=======
   },
   "dependencies": {
     "eslint": "^8.22.0"
->>>>>>> 64c8d83455a7284b00a56aab6ca29989f96c0977
   }
 }

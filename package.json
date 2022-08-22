@@ -1,0 +1,26 @@
+{
+  "name": "er01",
+  "version": "1.0.0",
+  "description": "test edisonrenato",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --config .prettierrc 'Node/**/*.js' --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edisonrenato/er01.git"
+  },
+  "keywords": [
+    "test",
+    "package"
+  ],
+  "author": "edisonrenato@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edisonrenato/er01/issues"
+  },
+  "homepage": "https://github.com/edisonrenato/er01#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}

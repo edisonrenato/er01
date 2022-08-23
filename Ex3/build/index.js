@@ -4,12 +4,10 @@ const numbers = require('./utilities/numbers.js');
 const strings = require('./utilities/strings.js');
 */
 // NOTE: This code has been converted to ES6
-import 'arrays';
-from;
-'./utilities/arrays.js';
-// const arrays = import { concatArr, addArr, lgNum,cut3 } from './utilities/arrays.js';
-const numbers = ;
-const strings = ;
+//import 'arrays' : Array[] from './utilities/arrays.js';
+import arrays from './utilities/arrays.js';
+import numbers from './utilities/numbers';
+import strings from './utilities/strings';
 //Declarations
 const numArr = [3, 4, 5, 6];
 const wordArr = ['cat', 'dog', 'rabbit', 'bird'];

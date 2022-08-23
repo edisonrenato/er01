@@ -6,19 +6,17 @@ const strings = require('./utilities/strings.js');
 
 // NOTE: This code has been converted to ES6
 
-import 'arrays' :array[] from './utilities/arrays.js';
-
-
-// const arrays = import { concatArr, addArr, lgNum,cut3 } from './utilities/arrays.js';
-const numbers = import { multiply,subtract, divide, sum, square } from './utilities/numbers.js';
-const strings = import { concat, capitalize, upperCase, lowerCase } from './utilities/strings.js';
+//import 'arrays' : Array[] from './utilities/arrays.js';
+import arrays from './utilities/arrays.js';
+import numbers from './utilities/numbers';
+import strings from './utilities/strings';
 
 //Declarations
-const numArr = [3, 4, 5, 6];
-const wordArr = ['cat', 'dog', 'rabbit', 'bird'];
-const arrSum = arrays.addArr(numArr);
-const mixArr = arrays.concatArr(numArr, wordArr);
-const myNum = '15' % 2;
+const numArr :number[] = [3, 4, 5, 6];
+const wordArr :string[] = ['cat', 'dog', 'rabbit', 'bird'];
+const arrSum :number[] = arrays.addArr(numArr);
+const mixArr :string[] = arrays.concatArr(numArr, wordArr);
+const myNum :number = '15' % 2;
 
 // results of function calls
 console.log(arrays.cut3(mixArr));

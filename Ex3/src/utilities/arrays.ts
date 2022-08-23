@@ -3,7 +3,7 @@ type VArray = (string|number)[];
 
 // Concatenate two arrays
 
-const concatArr = (arr1 :VArray, arr2:VArray) => {
+const concatArr = (arr1 :VArray, arr2:VArray) :VArray => {
     return [...arr1, ...arr2];
   };
   
@@ -18,11 +18,11 @@ const concatArr = (arr1 :VArray, arr2:VArray) => {
   };
   
   // Find the largest number in an array
-  const lgNum = (arr: (number|string)[]):number => {
-    let largest :number = 0;
-    arr.forEach((x :number) :void => {
+  const lgNum = (arr: VArray):number => {
+    let largest = 0 as number;
+    arr.forEach((x) => {
       if (x > largest) {
-        largest = x;
+        largest = x as number;
       }
     });
     return largest;

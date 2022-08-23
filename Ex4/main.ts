@@ -1,6 +1,11 @@
 // Import readline module for getting input from console
 // Find more here: https://nodejs.org/api/readline.html#readline_readline
-const readline = require('readline');
+//import readline from 'readline';
+//import * as readline from 'node:readline';
+import * as readline from 'node:readline/promises';
+//import { stdin as input, stdout as output } from 'node:process';
+
+
 
 // define question/output interface
 const rl = readline.createInterface({

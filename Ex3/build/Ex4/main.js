@@ -9,10 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 // Import readline module for getting input from console
 // Find more here: https://nodejs.org/api/readline.html#readline_readline
-//import readline from 'readline';
-//import * as readline from 'node:readline';
-import * as readline from 'node:readline/promises';
-//import { stdin as input, stdout as output } from 'node:process';
+import readline from 'readline';
 // define question/output interface
 const rl = readline.createInterface({
     // readable stream

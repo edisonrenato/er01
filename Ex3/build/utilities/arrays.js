@@ -1,4 +1,3 @@
-"use strict";
 // Concatenate two arrays
 const concatArr = (arr1, arr2) => {
     return [...arr1, ...arr2];
@@ -26,17 +25,16 @@ const cut3 = (arr) => {
     arr.splice(2, 1);
     return arr;
 };
-module.exports = {
+/*module.exports = {
+   concatArr,
+   addArr,
+   lgNum,
+   cut3,
+ };
+*/
+export default {
     concatArr,
     addArr,
     lgNum,
     cut3,
 };
-/*
-  export default {
-    concatArr,
-    addArr,
-    lgNum,
-    cut3,
-};
- */

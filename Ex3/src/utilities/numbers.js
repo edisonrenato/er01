@@ -24,10 +24,19 @@ const square = (num) => {
     return num * num;
 };
 
-module.exports = {
+/* module.exports = {
     multiply,
     subtract,
     divide,
     sum,
     square
   };
+*/
+
+  export default {
+    multiply,
+    subtract,
+    divide,
+    sum,
+    square
+  }

@@ -31,10 +31,17 @@ const concatArr = (arr1, arr2) => {
     return arr;
   };
   
-  module.exports = {
+/*  module.exports = {
     concatArr,
     addArr,
     lgNum,
     cut3,
   };
-  
+ */
+
+  export default {
+    concatArr,
+    addArr,
+    lgNum,
+    cut3,
+};

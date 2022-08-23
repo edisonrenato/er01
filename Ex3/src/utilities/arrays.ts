@@ -18,9 +18,9 @@ const concatArr = (arr1 :VArray, arr2:VArray) => {
   };
   
   // Find the largest number in an array
-  const lgNum = (arr: number[]):number => {
+  const lgNum = (arr: (number|string)[]):number => {
     let largest :number = 0;
-    arr.forEach((x:number) => {
+    arr.forEach((x :number) :void => {
       if (x > largest) {
         largest = x;
       }

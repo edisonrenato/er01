@@ -6,7 +6,8 @@
   "scripts": {
     "prettier": "prettier --config .prettierrc '*.js' --write",
     "lint": "eslint . --ext .js",
-    "build": "npx tsc"
+    "build": "npx tsc",
+    "jasmine": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/edisonrenato/er01#readme",
   "devDependencies": {
+    "@types/jasmine": "^4.3.0",
     "@types/node": "^18.7.11",
     "eslint": "^8.22.0",
     "prettier": "^2.7.1",
@@ -30,6 +32,8 @@
   },
   "dependencies": {
     "eslint": "^8.22.0",
+    "jasmine": "^4.3.0",
+    "jasmine-spec-reporter": "^7.0.0",
     "ts-node": "^10.9.1"
   }
 }
